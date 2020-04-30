@@ -13,7 +13,7 @@ import { handleGetAllDecks } from "../store/actions/decks";
 
 class Main extends React.Component {
 	componentDidMount() {
-		this.props.initilizeData();
+		this.props.initializeData();
 	}
 
 	render() {
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
 
 function mapDispatchToProps(dispatch) {
 	return {
-		initilizeData: () => {
+		initializeData: () => {
 			dispatch(handleGetAllDecks());
 		},
 	};
