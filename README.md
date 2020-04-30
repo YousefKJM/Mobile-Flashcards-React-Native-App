@@ -28,7 +28,7 @@ To run your project, navigate to the directory and run one of the following yarn
 💡 You can also open up the projects in the ios and android directories with their respective IDEs.
 🚀 Please note that expo-updates (​https://github.com/expo/expo/blob/master/packages/expo-updates/README.md​) has been configured in your project. Before you do a release build, make sure you run expo publish. Learn more. (​https://expo.fyi/release-builds-with-expo-updates​)
 
-After running `yarn web`, kindly run the following command
+if expo package is already installed in your machine, run the following command directly. (No need to follow the yarn commands for each platform)
 
 - `expo start`
 
