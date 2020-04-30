@@ -31,8 +31,8 @@ const routes = Object.keys(screens)
 	.reduce((acc, { id, item }) => {
 		const Comp = item.screen;
 		const Screen = (props) => <Comp {...props} />;
-		Screen.navigationOptions = ({ navigation }) => ({
-			header: (
+		Screen.navigationOptions = ({ navigation, Screen }) => ({
+			header: () => (
 				<AppBar menu={false} title={item.title} navigation={navigation} />
 			),
 		});
@@ -47,7 +47,7 @@ const NavigationStack = createStackNavigator(
 		Drawer: {
 			screen: NavigationDrawer,
 			navigationOptions: ({ navigation }) => ({
-				header: (
+				header: () => (
 					<AppBar
 						menu={true}
 						title="Mobile Flashcards"
