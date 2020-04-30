@@ -4,7 +4,7 @@ Mobile Flashcards is a React Native app for iOS and Android that allows users to
 
 It uses React Native, Expo, Redux, & React Navigation.
 
-<!-- - Live Demo: [Mobile Flashcards on Expo](https://expo.io/@yousefkjm/mobile-flashcards) -->
+- Live Demo: [Mobile Flashcards on Expo](https://expo.io/@yousefkjm/mobile-flashcards)
 
 ## Installation
 
