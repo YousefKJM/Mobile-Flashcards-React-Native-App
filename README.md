@@ -11,8 +11,8 @@ It uses React Native, Expo, Redux, & React Navigation.
 Clone the repository, change directories, and use npm or yarn to install the dependencies.
 
 ```bash
-$ git clone https://github.com/james-priest/mobile-flashcards.git
-$ cd mobile-flashcards
+$ git clone https://github.com/YousefKJM/Mobile-Flashcards-React-Native-App.git
+$ cd Mobile-Flashcards-React-Native-App
 $ yarn
 ```
 
@@ -20,7 +20,7 @@ $ yarn
 
 To run your project, navigate to the directory and run one of the following yarn commands.
 
-- `cd MobFlashcards`
+- `cd Mobile-Flashcards-React-Native-App`
 - `yarn android`
 - `yarn ios`
 - `yarn web`
