@@ -1,16 +1,16 @@
 import * as React from "react";
-import { AppBar } from "react-native-paper";
+import { Appbar } from "react-native-paper";
 import { DrawerActions } from "react-navigation-drawer";
 
 const Header = ({ menu, title, navigation }) => (
-	<AppBar.Header>
+	<Appbar.Header>
 		{menu === true ? (
-			<AppBar.Action icon="menu" onPress={() => navigation.toggleDrawer()} />
+			<Appbar.Action icon="menu" onPress={() => navigation.toggleDrawer()} />
 		) : (
-			<AppBar.BackAction onPress={() => navigation.goBack(null)} />
+			<Appbar.BackAction onPress={() => navigation.goBack(null)} />
 		)}
 
-		<AppBar.Content
+		<Appbar.Content
 			titleStyle={{
 				fontWeight: "bold",
 				fontSize: 20,
@@ -18,7 +18,7 @@ const Header = ({ menu, title, navigation }) => (
 			title={title}
 			subtitle={null}
 		/>
-	</AppBar.Header>
+	</Appbar.Header>
 );
 
 export default Header;
