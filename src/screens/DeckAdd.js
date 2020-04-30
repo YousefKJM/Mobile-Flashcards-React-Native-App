@@ -27,7 +27,7 @@ class DeckAdd extends React.Component {
 		this.setState({ [name]: value });
 	};
 
-	componentWillReceiveProps(nextProps) {
+	componentDidUpdate(nextProps) {
 		if (nextProps.newDeckId !== this.props.newDeckId) {
 			this.props.navigation.navigate("DeckSingle", {
 				deckId: nextProps.newDeckId,

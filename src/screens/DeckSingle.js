@@ -26,7 +26,7 @@ class DeckSingle extends React.Component {
 		this.props.deleteDeck(id);
 	}
 
-	componentWillReceiveProps(nextProps) {
+	componentDidUpdate(nextProps) {
 		if (!nextProps.deck) {
 			this.props.navigation.goBack();
 		}
