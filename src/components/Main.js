@@ -12,33 +12,33 @@ import { handleGetAllDecks } from "../store/actions/decks";
 // );
 
 class Main extends React.Component {
-  componentDidMount() {
-    this.props.initilizeData();
-  }
+	componentDidMount() {
+		this.props.initilizeData();
+	}
 
-  render() {
-    return (
-      <SafeAreaView style={styles.container}>
-        <View style={styles.container} behavior="padding">
-          {this.props.children}
-        </View>
-      </SafeAreaView>
-    );
-  }
+	render() {
+		return (
+			<SafeAreaView style={styles.container}>
+				<View style={styles.container} behavior="padding">
+					{this.props.children}
+				</View>
+			</SafeAreaView>
+		);
+	}
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1
-  }
+	container: {
+		flex: 1,
+	},
 });
 
 function mapDispatchToProps(dispatch) {
-  return {
-    initilizeData: () => {
-      dispatch(handleGetAllDecks());
-    }
-  };
+	return {
+		initilizeData: () => {
+			dispatch(handleGetAllDecks());
+		},
+	};
 }
 
 export default connect(null, mapDispatchToProps)(Main);
