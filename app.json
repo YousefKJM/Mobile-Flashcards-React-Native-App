@@ -1,23 +1,25 @@
 {
+  "name": "mobile-flashcards",
+  "displayName": "mobile-flashcards",
+  "expo": {
     "name": "mobile-flashcards",
-    "displayName": "mobile-flashcards",
-    "expo": {
-        "name": "mobile-flashcards",
-        "slug": "mobile-flashcards",
-        "version": "1.0.0",
-        "platforms": [
-            "ios",
-            "android",
-            "web"
-        ],
-        "orientation": "portrait",
-        "icon": "./assets/icon.png",
-        "splash": {
-            "image": "./assets/img/splash/splash.png",
-            "resizeMode": "cover"
-        },
-        "assetBundlePatterns": [
-            "**/*"
-        ]
-    }
+    "slug": "mobile-flashcards",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/img/splash/splash.png",
+      "resizeMode": "cover"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "description": "Mobile Flashcards is a React Native app for iOS and Android that allows users to create decks, add cards and quiz themselves.",
+    "githubUrl": "https://github.com/YousefKJM/Mobile-Flashcards-React-Native-App"
+  }
 }
